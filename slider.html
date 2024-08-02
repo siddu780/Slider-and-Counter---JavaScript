@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:50px;
+        }
+        .slider{
+            display: flex;
+        }
+        .slides{
+            height: 400px;
+            width: 600px;
+            overflow: hidden;
+        }
+        button{
+            border-radius: 100%;
+            background-color:antiquewhite;
+            border: 1px solid rgb(102, 67, 21);
+            color: brown;
+            width: 30px;
+            height: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="arrow"><button id="prev"><</button></div>
+        <div class="slides">
+        <div class="slider">
+            <img class="slide" src="https://images.pexels.com/photos/45243/saxophone-music-gold-gloss-45243.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <img class="slide" src="https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <img class="slide" src="https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <img class="slide" src="https://images.pexels.com/photos/3018083/pexels-photo-3018083.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+
+        </div>
+        <div class="arrow2"><button id="next">></button></div>
+        <script src="./slider.js"></script>
+    </div>
+</body>
+</html>
